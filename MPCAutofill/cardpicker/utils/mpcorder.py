@@ -11,9 +11,9 @@ from typing import (AbstractSet, Any, Dict, ItemsView, Iterator, List, Set,
 import chardet
 import defusedxml.ElementTree as ET
 
-from cardpicker.models import DFCPair
-from cardpicker.utils.search_functions import process_line, text_to_list
-from cardpicker.utils.to_searchable import to_searchable
+from ..models import DFCPair
+from ..utils.search_functions import process_line, text_to_list
+from ..utils.to_searchable import to_searchable
 
 
 class Cardstocks(Enum):

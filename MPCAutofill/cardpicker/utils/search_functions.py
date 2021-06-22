@@ -5,10 +5,10 @@ from django.utils import timezone
 from elasticsearch_dsl.query import Match
 from Levenshtein import distance
 
-from cardpicker.documents import CardbackSearch, CardSearch, TokenSearch
-from cardpicker.forms import InputText
-from cardpicker.models import Source
-from cardpicker.utils.to_searchable import to_searchable
+from ..documents import CardbackSearch, CardSearch, TokenSearch
+from ..forms import InputText
+from ..models import Source
+from ..utils.to_searchable import to_searchable
 
 from typing import Tuple, List, Dict
 

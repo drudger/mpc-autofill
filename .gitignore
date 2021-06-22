@@ -168,3 +168,6 @@ MPCAutofill/client_secrets.json
 static
 *.db
 .env_prod
+
+# VS Code
+.vscode/

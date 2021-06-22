@@ -9,8 +9,8 @@ from googleapiclient.errors import HttpError
 from oauth2client.service_account import ServiceAccountCredentials
 from tqdm import tqdm
 
-from cardpicker.models import Card, Cardback, Source, Token
-from cardpicker.utils.to_searchable import to_searchable
+from ...models import Card, Cardback, Source, Token
+from ...utils.to_searchable import to_searchable
 
 # cron job to run this cmd daily: 0 0 * * * bash /root/mpc-autofill/update_database >> /root/db_update.txt 2>&1
 

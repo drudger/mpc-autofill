@@ -3,13 +3,13 @@ import json
 from django.http import JsonResponse
 from django.shortcuts import redirect, render
 
-from cardpicker.forms import InputCSV, InputText, InputXML
-from cardpicker.models import Card, Cardback, Source, Token
-from cardpicker.utils.mpcorder import Faces, MPCOrder, ReqTypes
-from cardpicker.utils.search_functions import (
+from .forms import InputCSV, InputText, InputXML
+from .models import Card, Cardback, Source, Token
+from .utils.mpcorder import Faces, MPCOrder, ReqTypes
+from .utils.search_functions import (
     build_context, query_es_card, query_es_cardback, query_es_token,
     retrieve_search_settings, search_new, search_new_elasticsearch_definition)
-from cardpicker.utils.to_searchable import to_searchable
+from .utils.to_searchable import to_searchable
 
 
 def index(request, error=False):
